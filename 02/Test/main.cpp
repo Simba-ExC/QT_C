@@ -1,12 +1,11 @@
-#include "mainwindow.h"
-#include <QApplication>
-#include <QMessageBox>
+#include <QCoreApplication>
 #include <QNetworkRequest>
 #include <QtSql>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QCoreApplication a(argc, argv);
+
 
     QNetworkRequest request;
     request.setUrl(QUrl("https://github.com/Simba-ExC"));
